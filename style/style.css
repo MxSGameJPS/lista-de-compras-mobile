@@ -1,0 +1,8 @@
+:root {
+    --fundo: #17171A;
+}
+
+
+body {
+    background-color: var(--fundo);
+}

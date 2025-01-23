@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,13 +12,140 @@
     <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/style.css" />
     <title>Lista de Compras</title>
-    <script>
-      src = "index.js";
-    </script>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="cabecalho">
+      <h1 class="cabecalho__titulo">Lista de Compras</h1>
+      <p class="cabecalho__texto">Item</p>
+    </header>
+    <main>
+      <form class="form">
+        <input
+          class="input-item"
+          id="input-item"
+          type="text"
+          placeholder="Digite o item que deseja adicionar"
+        />
+
+        <div class="form__container">
+          <div class="form__quantidade">
+            <p class="form__quantidade__texto">Quantidade</p>
+            <input
+              class="input-quantidade"
+              id="input-quantidade"
+              type="number"
+              placeholder="0"
+            />
+
+            <div class="form__unidade">
+              <p class="unidade">Un</p>
+              <img
+                class="seta"
+                src="./assets/Iconsetabaixo.svg"
+                alt="seta de abertura do menu"
+              />
+              <ul id="menu-unidade" class="menu-seletor">
+                <li>Un</li>
+                <li>LT</li>
+                <li>KG</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="form__menu">
+            <p class="form__menu__texto">Categoria</p>
+            <p class="form__menu__tipo" id="categoria-seletor">
+              Selecionar
+              <img
+                class="seta2"
+                src="./assets/Iconsetabaixo.svg"
+                alt="seta de abertura do menu"
+              />
+            </p>
+
+            <ul id="menu-categoria" class="menu-seletor">
+              <li class="item-categoria" data-categoria="padaria">
+                <img
+                  class="img-categoria"
+                  src="./assets/Iconpadaria.svg"
+                  alt="Ícone Padaria"
+                />
+                Padaria
+              </li>
+              <li class="item-categoria" data-categoria="legumes">
+                <img
+                  class="img-categoria"
+                  src="./assets/Iconlegume.svg"
+                  alt="Ícone Legumes"
+                />
+                Legumes
+              </li>
+              <li class="item-categoria" data-categoria="frutas">
+                <img
+                  class="img-categoria"
+                  src="./assets/Iconfruta.svg"
+                  alt="Ícone Frutas"
+                />
+                Frutas
+              </li>
+              <li class="item-categoria" data-categoria="bebidas">
+                <img
+                  class="img-categoria"
+                  src="./assets/Iconbebida.svg"
+                  alt="Ícone Bebidas"
+                />
+                Bebidas
+              </li>
+              <li class="item-categoria" data-categoria="carne">
+                <img
+                  class="img-categoria"
+                  src="./assets/Iconcarne.svg"
+                  alt="Ícone Carne"
+                />
+                Carne
+              </li>
+              <li class="item-categoria" data-categoria="diversos">
+                <img
+                  class="img-categoria"
+                  src="./assets/iconoutros.svg"
+                  alt="Ícone Diversos"
+                />
+                Diversos
+              </li>
+            </ul>
+          </div>
+
+          <button class="adicionar" id="adicionar-item" type="button">
+            <img src="./assets/Iconmais.svg" alt="sinal de mais" />
+          </button>
+        </div>
+      </form>
+
+      <div class="lista-compras">
+        <input class="checkbox" id="checkbox-1" type="checkbox" />
+
+        <ul class="lista-compras__itens" id="lista-de-compras">
+          <li>
+            <h3 class="item">Maçã</h3>
+            <p class="lista-compras__quantidade">2 unidades</p>
+          </li>
+        </ul>
+
+        <div class="imagens">
+          <img
+            class="imglista"
+            src="./assets/Iconfruta.svg"
+            alt="imagem de uma fruta"
+          />
+          <img
+            class="imglista2"
+            src="./assets/Icontrespontos.svg"
+            alt="Imagem de tres pontos na vertical"
+          />
+        </div>
+      </div>
+    </main>
     <footer></footer>
+    <script defer src="index.js"></script>
   </body>
 </html>

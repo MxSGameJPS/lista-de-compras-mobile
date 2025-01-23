@@ -1,8 +1,235 @@
 :root {
-    --fundo: #17171A;
+  --fundo: #17171a;
 }
-
 
 body {
-    background-color: var(--fundo);
+  background-color: var(--fundo);
+  font-family: "inter", sans-serif;
+  font-size: 16px;
+  color: white;
+  width: 100%;
 }
+
+.cabecalho {
+  background-image: url("../assets/topo.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+}
+
+.cabecalho__titulo {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 4em 1em;
+}
+.cabecalho__texto {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0 2em;
+  margin-top: -5em;
+}
+.form {
+  padding: 1em 1.5em;
+  width: 80%;
+}
+
+.input-item {
+  padding: 1em;
+  width: 100%;
+}
+.form__container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 1em 0;
+  width: 100%;
+  justify-content: center;
+}
+.form__quantidade {
+  display: flex;
+  align-items: center;
+}
+.form__quantidade__texto {
+  padding: 1em 0;
+  position: absolute;
+  bottom: 50%;
+}
+.input-quantidade {
+  width: 20%;
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: 6px 0px 0px 6px;
+}
+.form__unidade {
+  display: flex;
+  align-items: center;
+  margin-top: 1.7em;
+  background-color: #252529;
+  border-radius: 0px 6px 6px 0px;
+}
+.unidade {
+  padding: 0.98em 1em 0.88em 1em;
+}
+.seta {
+  padding: 0 1em 0 0;
+}
+.form__menu {
+  display: flex;
+  align-items: center;
+}
+.form__menu__texto {
+  padding: 1em 0;
+  position: absolute;
+  bottom: 50%;
+}
+.form__menu__tipo {
+  display: flex;
+  border-radius: 6px;
+  background-color: #252529;
+  padding: 12px 20px 12px 16px;
+  margin-top: 1.7em;
+  align-items: center;
+}
+.seta2 {
+  padding: 0.2em 0em 0.2em 1em;
+}
+.adicionar {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: 2em 1em 0 0.5em;
+  position: absolute;
+  left: 100%;
+  padding: 10px;
+  background-color: #7450ac;
+  border-radius: 999px;
+}
+
+.lista-compras {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 1.5em;
+  width: 80%;
+  background-color: #252529;
+  border-radius: 6px;
+  margin: 0.7em 1em;
+}
+.lista-compras__itens {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  margin-left: -8em;
+}
+.item {
+  padding: 0 0 0.5em;
+  font-size: 16px;
+  font-weight: 700;
+}
+.imagens{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.imglista {
+  background-color: rgba(224, 123, 103, 0.2);
+  padding: 8px;
+  border-radius: 999px;
+  gap: 16px;
+}
+.imglista2 {
+    width: 20px;
+    height: 20px;
+}
+/* Estilo para exibir/ocultar o menu */
+.menu-seletor {
+    display: none ; /* Inicialmente oculto */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-seletor--exibir {
+    display: block; /* Exibe o menu quando a classe for adicionada */
+    position: absolute;
+    background-color: #252529; /* Cor de fundo do menu */
+    border-radius: 6px;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 1;
+    top: 100%; /* Ajuste a posição do menu em relação ao elemento */
+  }
+  
+  .menu-seletor li {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .menu-seletor li:hover {
+    background-color: #7450ac; /* Efeito de hover */
+  }
+  
+  /* Estilo para o menu seletor de categoria */
+  #menu-categoria {   
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #252529;
+    border-radius: 6px;
+    padding: 10px 0;
+    list-style: none;
+    width: 100%;
+  }
+  .menu-seletor--exibir {
+    display: block;  /* Menu exibido quando a classe é adicionada */
+  }
+  
+  
+  #menu-categoria li {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #menu-categoria li:hover {
+    background-color: #7450ac;
+  }
+  
+  /* Imagem da categoria */
+  .img-categoria {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  /* Estilo para o texto e a seta de categoria */
+  .form__menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .form__menu__texto {
+    font-size: 18px;
+    font-weight: 700;
+    padding-right: 10px;
+  }
+  
+  .form__menu__tipo {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    background-color: #252529;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .seta2 {
+    cursor: pointer;
+    transition: transform 0.3s ease;  /* Efeito de rotação suave */
+    transform-origin: center;  /* Mantém a seta no centro ao girar */
+  }
+ 

@@ -37,82 +37,39 @@
               placeholder="0"
             />
 
-            <div class="form__unidade">
-              <p class="unidade">Un</p>
-              <img
-                class="seta"
-                src="./assets/Iconsetabaixo.svg"
-                alt="seta de abertura do menu"
-              />
-              <ul id="menu-unidade" class="menu-seletor">
-                <li>Un</li>
-                <li>LT</li>
-                <li>KG</li>
-              </ul>
-            </div>
-          </div>
+            <form class="formulario">
+              <label class="campo-grupo">
+                <span class="unidade">Unidade</span>
+                <select class="produto-input" name="unidade" id="unidade">
+                  <option value="Unidade">Un</option>
+                  <option value="Kilo Grama">Kg</option>
+                  <option value="Litros">Ltr</option>
+                </select>
+              </label>
+            </form>
 
-          <div class="form__menu">
-            <p class="form__menu__texto">Categoria</p>
-            <p class="form__menu__tipo" id="categoria-seletor">
-              Selecionar
-              <img
-                class="seta2"
-                src="./assets/Iconsetabaixo.svg"
-                alt="seta de abertura do menu"
-              />
-            </p>
-
-            <ul id="menu-categoria" class="menu-seletor">
-              <li class="item-categoria" data-categoria="padaria">
-                <img
-                  class="img-categoria"
-                  src="./assets/Iconpadaria.svg"
-                  alt="Ícone Padaria"
-                />
-                Padaria
-              </li>
-              <li class="item-categoria" data-categoria="legumes">
-                <img
-                  class="img-categoria"
-                  src="./assets/Iconlegume.svg"
-                  alt="Ícone Legumes"
-                />
-                Legumes
-              </li>
-              <li class="item-categoria" data-categoria="frutas">
-                <img
-                  class="img-categoria"
-                  src="./assets/Iconfruta.svg"
-                  alt="Ícone Frutas"
-                />
-                Frutas
-              </li>
-              <li class="item-categoria" data-categoria="bebidas">
-                <img
-                  class="img-categoria"
-                  src="./assets/Iconbebida.svg"
-                  alt="Ícone Bebidas"
-                />
-                Bebidas
-              </li>
-              <li class="item-categoria" data-categoria="carne">
-                <img
-                  class="img-categoria"
-                  src="./assets/Iconcarne.svg"
-                  alt="Ícone Carne"
-                />
-                Carne
-              </li>
-              <li class="item-categoria" data-categoria="diversos">
-                <img
-                  class="img-categoria"
-                  src="./assets/iconoutros.svg"
-                  alt="Ícone Diversos"
-                />
-                Diversos
-              </li>
-            </ul>
+            <form class="formulario">
+              <label class="campo-grupo">
+                <span class="categoria">Categoria</span>
+                <select
+                  class="produto-input-categoria"
+                  name="categoria"
+                  id="categoria"
+                >
+                  <option value="padaria">
+                    <img
+                      src="./assets/Iconpadaria.svg"
+                      alt="sanduiche"
+                    />Padaria
+                  </option>
+                  <option value="Legumes"><img src="./assets/Iconlegumes.svg" alt="Legumes">Legumes</option>
+                  <option value="Carnes"><img src="./assets/Iconcarne.svg" alt="Carnes">Carnes</option>
+                  <option value="Frutas"><img src="./assets/Iconfruta.svg" alt="Carnes">Frutas</option>
+                  <option value="Bebidas"><img src="./assets/Iconbebida.svg" alt="Carnes">Bebidas</option>
+                  <option value="Diversos"><img src="./assets/iconoutros.svg" alt="Carnes">Diversos</option>
+                </select>
+              </label>
+            </form>
           </div>
 
           <button class="adicionar" id="adicionar-item" type="button">

@@ -47,7 +47,6 @@ function adicionar() {
   document.getElementById("categoria").value = "";
 }
 
-
 function limpar() {
   let lista = document.querySelector(".lista-container");
   while (lista.firstChild) {
@@ -69,15 +68,23 @@ function salvar() {
     const categoria = item.querySelector(".imagen-produto").textContent;
 
     // Adiciona o texto formatado ao PDF com uma pequena formatação
-    doc.text(`${index + 1}. ${nomeItem} - ${quantidade} - ${categoria}`, 10, yPosition);
-    yPosition += 10; // Move a posição para o próximo item
+    doc.text(
+      `${index + 1}. ${nomeItem} - ${quantidade} - ${categoria}`,
+      10,
+      yPosition
+    );
+    yPosition += 10;
+    // Adiciona texto no rodapé do PDF
+    doc.text(
+      "Desenvolvido por Saulo Pavanello - (51) 99339-2983",
+      10,
+      doc.internal.pageSize.height - 10
+    );
+    // Move a posição para o próximo item
   });
 
   // Salva o PDF no dispositivo
   doc.save("lista-de-compras.pdf");
 }
 
-
-
 // service-worker.js
-

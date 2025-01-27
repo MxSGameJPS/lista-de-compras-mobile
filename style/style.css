@@ -1,3 +1,7 @@
+@import url("cabecalho.css");
+@import url("formuario.css");
+@import url("lista.css");
+
 :root {
   --fundo: #17171a;
 }
@@ -9,145 +13,9 @@ body {
   color: white;
 }
 
-.cabecalho {
-  background-image: url("../assets/topo.svg");
-  background-repeat: no-repeat;
 
-  background-size: contain;
-}
 
-.cabecalho__titulo {
-  font-size: 24px;
-  font-weight: 700;
-  padding: 4em 1em;
-}
-.cabecalho__texto {
-  font-size: 12px;
-  font-weight: 400;
-  padding: 0 2em;
-  margin-top: -5em;
-}
-.form {
-  padding: 1em 1.5em;
-  width: 80%;
-}
 
-.input-item {
-  padding: 1em;
-  width: 100%;
-}
-.form__container {
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding: 1em 0;
-  width: 100%;
-  justify-content: center;
-}
-.form__quantidade {
-  display: flex;
-  align-items: center;
-}
-.form__quantidade__texto {
-  padding: 1em 0;
-  position: absolute;
-  bottom: 50%;
-  font-size: 12px;
-}
-.input-quantidade {
-  width: 20%;
-  padding: 1em;
-  margin-top: 2em;
-  border-radius: 6px;
-}
-.formulario {
-  display: flex;
-  align-items: center;
-  margin-top: 1.5em;
-  background-color: #25252900;
-  border-radius: 0px 6px 6px 0px;
-  justify-content: center;
-}
-.campo-grupo {
-  display: flex;
-  align-items: center;
-  padding: 0.88em 0.5em 0.88em 0.5em;
-}
-.unidade,
-.categoria {
-  padding: 1em 0;
-  position: absolute;
-  bottom: 50%;
-  font-size: 12px;
-}
-.produto-input {
-  display: flex;
-  border-radius: 6px;
-  background-color: #252529;
-  padding: 14px 25px 10px 26px;
-  margin-top: 2em;
-  align-items: center;
-  color: white;
-}
-.produto-input-categoria {
-  display: flex;
-  border-radius: 6px;
-  background-color: #252529;
-  padding: 14px 10px 9px;
-  color: white;
-  margin-top: 0.3em;
-}
-.adicionar {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  margin: 2em 1em 0 0.5em;
-  position: absolute;
-  left: 100%;
-  padding: 10px;
-  background-color: #7450ac;
-  border-radius: 999px;
-}
-.lista-container {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.lista-compras {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2em 1.5em;
-  width: 80%;
-  background-color: #252529;
-  border-radius: 6px;
-  margin: 0.7em 1em;
-  position: relative;
-}
-.lista-compras__itens {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-}
-.texto-verde {
-  color: greenyellow;
-  padding-left: 1em;
-  margin-right: -4.5em;
-}
-
-.imagen-produto {
-  border-radius: 8px;
-  padding: 4px;
-  background-color: #7450ac;
-}
-
-.item {
-  margin-left: 1em;
-}
 .botao__limpar {
   display: flex;
   align-items: center;
@@ -177,10 +45,7 @@ body {
   padding: 1em;
   width: 35%;
 }
-.rodape {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+.rodape { 
   width: 100%;
   background-color: #333;
   color: white;
@@ -188,10 +53,12 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
+  
 }
-.rodape__texto{
+.rodape__texto {
   font-size: 12px;
   text-align: center;
   margin-right: 3em;
   padding: 4px;
 }
+

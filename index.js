@@ -87,4 +87,4 @@ function salvar() {
   doc.save("lista-de-compras.pdf");
 }
 
-// service-worker.js
+import { Analytics } from "@vercel/analytics/react"

@@ -1,49 +1,68 @@
-🛒 Lista de Compras Mobile
-Lista de Compras Mobile é uma aplicação web prática e intuitiva para criar, organizar e compartilhar listas de compras. Com um design minimalista e funcional, o projeto foi desenvolvido com foco em facilitar o dia a dia, permitindo salvar listas em PDF e compartilhar com quem você quiser!
+# Lista de Compras 🛒
 
-<img src="./assets/amostra.jpeg" alt="Amostra do Projeto" width="600" />
+Este é um projeto simples e intuitivo para gerenciar sua lista de compras. Com esta aplicação, você pode adicionar itens, especificar quantidade, unidades, categorias, e muito mais, tornando suas compras mais organizadas e práticas.
 
-🌟 Funcionalidades
-✅ Criação de listas de compras personalizadas.
-✅ Validação de quantidade mínima (não é permitido valores negativos).
-✅ Opção para salvar listas em formato PDF.
-✅ Compartilhamento simples e rápido.
-✅ Design responsivo para funcionar em dispositivos móveis e desktops.
-🚀 Tecnologias Utilizadas
-HTML5 : Estruturação do projeto.
-CSS3 : Estilização e layout responsivo.
-JavaScript : Funcionalidades e validações.
-🎯 Como usar
-Acesse o projeto em: Lista de Compras Mobile
-Crie sua lista de compras adicionando os itens e detalhes.
-Clique em Salvar PDF para baixar sua lista e compartilhar com quem desejar.
-Aproveite a praticidade no seu dia a dia!
-🛠️ Como Executar o Projeto Localmente
-Clonar este repositório:
-bater
+![Amostra do Projeto](https://github.com/MxSGameJPS/lista-de-compras-mobile/blob/main/assets/amostra.jpeg?raw=true)
 
-Copiar
+---
 
-Editar
-git clone https://github.com/seu-usuario/lista-de-compras-mobile.git
-Acesse a pasta do projeto:
-bater
+## 📋 Funcionalidades
 
-Copiar
+- Adicionar itens à lista com detalhes como:
+  - Quantidade
+  - Unidade (ex.: Un, Kg, Ltr, etc.)
+  - Categoria (ex.: Padaria, Frutas, Carnes, etc.)
+- Limpar a lista com um clique.
+- Salvar sua lista de compras.
+- Design moderno e responsivo.
 
-Editar
-cd lista-de-compras-mobile
-Abra o arquivo index.htmlno seu navegador favorito.
-📄 Licença
-Este projeto está sob licença MIT. Sinta-se à vontade para usar, modificar e compartilhar!
+---
 
-🤝 Contribuições
-Contribuições são bem-vindas! Caso tenha sugestões, encontre bugs ou deseje adicionar novas funcionalidades, sinta-se à vontade para abrir um issue ou enviar um pull request.
+## 📂 Estrutura do Projeto
 
-🙌 Agradecimentos
-Agradeço à Alura por fornecer os conhecimentos necessários para o desenvolvimento deste projeto.
+├── index.html # Estrutura principal do HTML 
 
-👨‍💻 Desenvolvido por:
-Saulo Pavanello
+├── style/ │ 
+
+├── reset.css # Reset básico de estilos │ 
+
+├── style.css # Estilos personalizados 
+
+├── assets/ │ 
+
+├── Iconmais.svg #Ícone de adicionar │ 
+
+├── amostra.jpeg # Amostra do projeto 
+
+├── index.js # Lógica da aplicação
+
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5**: Estrutura semântica da aplicação.
+- **CSS3**: Estilização personalizada e responsiva.
+- **JavaScript**: Funcionalidades interativas.
+- **Google Fonts**: Tipografias modernas (`Inter` e `Poppins`).
+- **jsPDF**: Biblioteca para salvar arquivos PDF.
+
+---
+
+## 📦 Como Usar
+
+1. https://lista-de-compras-mobile.vercel.app
+
+## 👨‍💻 Desenvolvedor
+
+Desenvolvido por Saulo Pavanello
 📞 (51) 99339-2983
-📧 mxsgamejps@email .com
+
+✉️ Entre em contato : mxsgamejps@gmail.com
+
+📜 Licença
+Este projeto está licenciado sob uma licença do MIT .
+
+Divirta-se organizando suas compras! 😊
+
+

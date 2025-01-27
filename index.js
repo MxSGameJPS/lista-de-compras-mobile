@@ -88,3 +88,4 @@ function salvar() {
 }
 
 import { Analytics } from "@vercel/analytics/react"
+import { inject } from "@vercel/analytics"

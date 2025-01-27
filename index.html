@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/style.css" />
     <title>Lista de Compras</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
   </head>
   <body>
     <header class="cabecalho">
@@ -29,7 +31,7 @@
 
         <div class="form__container">
           <div class="form__quantidade">
-            <p class="form__quantidade__texto">Quantidade</p>
+            <p class="form__quantidade__texto">Qtde</p>
             <input
               class="input-quantidade"
               id="input-quantidade"
@@ -41,9 +43,10 @@
               <label class="campo-grupo">
                 <span class="unidade">Unidade</span>
                 <select class="produto-input" name="unidade" id="unidade">
-                  <option value="Unidade">Un</option>
-                  <option value="Kilo Grama">Kg</option>
-                  <option value="Litros">Ltr</option>
+                  <option value="Un">Un</option>
+                  <option value="KG">Kg</option>
+                  <option value="Ltr">Ltr</option>
+                  <option value="Pct">Pct</option>
                 </select>
               </label>
             </form>
@@ -56,53 +59,54 @@
                   name="categoria"
                   id="categoria"
                 >
-                  <option value="padaria">
-                    <img
-                      src="./assets/Iconpadaria.svg"
-                      alt="sanduiche"
-                    />Padaria
-                  </option>
-                  <option value="Legumes"><img src="./assets/Iconlegumes.svg" alt="Legumes">Legumes</option>
-                  <option value="Carnes"><img src="./assets/Iconcarne.svg" alt="Carnes">Carnes</option>
-                  <option value="Frutas"><img src="./assets/Iconfruta.svg" alt="Carnes">Frutas</option>
-                  <option value="Bebidas"><img src="./assets/Iconbebida.svg" alt="Carnes">Bebidas</option>
-                  <option value="Diversos"><img src="./assets/iconoutros.svg" alt="Carnes">Diversos</option>
+                  <option value="Padaria">Padaria</option>
+                  <option value="Legumes">Legumes</option>
+                  <option value="Carnes">Carnes</option>
+                  <option value="Frutas">Frutas</option>
+                  <option value="Bebidas">Bebidas</option>
+                  <option value="Higiene Pessoal">Higiene Pessoal</option>
+                  <option value="Graos">Grãos</option>
+                  <option value="Limpeza">Limpeza</option>
+                  <option value="Verduras">Verduras</option>
+                  <option value="Bolachas">Bolachas</option>
+                  <option value="Outros">Outros</option>
                 </select>
               </label>
             </form>
           </div>
 
-          <button class="adicionar" id="adicionar-item" type="button">
+          <button
+            onclick="adicionar()"
+            class="adicionar"
+            id="adicionar-item"
+            type="button"
+          >
             <img src="./assets/Iconmais.svg" alt="sinal de mais" />
           </button>
         </div>
       </form>
 
-      <div class="lista-compras">
-        <input class="checkbox" id="checkbox-1" type="checkbox" />
+      <section class="lista-container">
+        <!--<section class="lista-compras">
+          <input class="checkbox" id="checkbox-1" type="checkbox" />
+          <section class="lista-compras__itens" id="lista-de-compras">
+            <span class="texto-verde">1x</span>
+            <span class="item">Maçã</span>
+            <span class="imagen-produto">Frutas</span>
+          </section>
+        </section>-->
+      </section>
 
-        <ul class="lista-compras__itens" id="lista-de-compras">
-          <li>
-            <h3 class="item">Maçã</h3>
-            <p class="lista-compras__quantidade">2 unidades</p>
-          </li>
-        </ul>
-
-        <div class="imagens">
-          <img
-            class="imglista"
-            src="./assets/Iconfruta.svg"
-            alt="imagem de uma fruta"
-          />
-          <img
-            class="imglista2"
-            src="./assets/Icontrespontos.svg"
-            alt="Imagem de tres pontos na vertical"
-          />
-        </div>
-      </div>
+      <section class="botao__limpar">
+        <button onclick="limpar()" class="limpar">Limpar lista</button>
+        <button onclick="salvar()" class="limpar salvar">Salvar</button>
+        <!--<button onclick="compartilhar()" class="limpar">Compartilhar</button>-->
+      </section>
     </main>
-    <footer></footer>
+    <footer class="rodape">
+      <p class="rodape__texto">Desenvolvido por Saulo Pavanello</p> 
+      <p class="rodape__texto">(51)99339-2983</p>
+    </footer>
     <script defer src="index.js"></script>
   </body>
 </html>

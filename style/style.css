@@ -7,13 +7,12 @@ body {
   font-family: "inter", sans-serif;
   font-size: 16px;
   color: white;
-  width: 100%;
 }
 
 .cabecalho {
   background-image: url("../assets/topo.svg");
   background-repeat: no-repeat;
-  width: 100%;
+
   background-size: contain;
 }
 
@@ -64,26 +63,22 @@ body {
 .formulario {
   display: flex;
   align-items: center;
-  margin-top: 1.7em;
+  margin-top: 1.5em;
   background-color: #25252900;
   border-radius: 0px 6px 6px 0px;
+  justify-content: center;
 }
-.campo-grupo {
-  padding: 0.98em 1em 0.88em 1em;
-}
-/*.seta {
-  padding: 0 1em 0 0;
-}*/
 .campo-grupo {
   display: flex;
   align-items: center;
+  padding: 0.88em 0.5em 0.88em 0.5em;
 }
-.unidade, .categoria {
+.unidade,
+.categoria {
   padding: 1em 0;
   position: absolute;
   bottom: 50%;
   font-size: 12px;
-  
 }
 .produto-input {
   display: flex;
@@ -92,15 +87,15 @@ body {
   padding: 14px 25px 10px 26px;
   margin-top: 2em;
   align-items: center;
-  color: white;  
+  color: white;
 }
 .produto-input-categoria {
   display: flex;
   border-radius: 6px;
   background-color: #252529;
-  padding: 12px 30px;
+  padding: 14px 10px 9px;
   color: white;
-
+  margin-top: 0.3em;
 }
 .adicionar {
   display: flex;
@@ -113,6 +108,13 @@ body {
   background-color: #7450ac;
   border-radius: 999px;
 }
+.lista-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
 .lista-compras {
   display: flex;
@@ -123,122 +125,73 @@ body {
   background-color: #252529;
   border-radius: 6px;
   margin: 0.7em 1em;
+  position: relative;
 }
 .lista-compras__itens {
   display: flex;
-  align-items: left;
-  flex-direction: column;
-  margin-left: -8em;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
+.texto-verde {
+  color: greenyellow;
+  padding-left: 1em;
+  margin-right: -4.5em;
+}
+
+.imagen-produto {
+  border-radius: 8px;
+  padding: 4px;
+  background-color: #7450ac;
+}
+
 .item {
-  padding: 0 0 0.5em;
-  font-size: 16px;
-  font-weight: 700;
+  margin-left: 1em;
 }
-.imagens{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.botao__limpar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2em;
 }
-.imglista {
-  background-color: rgba(224, 123, 103, 0.2);
-  padding: 8px;
-  border-radius: 999px;
-  gap: 16px;
+.limpar {
+  background-color: #7450ac;
+  color: white;
+  border: none;
+  border-radius: 1em;
+  padding: 1em;
+  width: 35%;
 }
-.imglista2 {
-    width: 20px;
-    height: 20px;
+
+.lista-compras.checked {
+  text-decoration: line-through;
+  opacity: 0.6;
 }
-/* Estilo para exibir/ocultar o menu */
-.menu-seletor {
-    display: none ; /* Inicialmente oculto */
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu-seletor--exibir {
-    display: block; /* Exibe o menu quando a classe for adicionada */
-    position: absolute;
-    background-color: #252529; /* Cor de fundo do menu */
-    border-radius: 6px;
-    padding: 10px 0;
-    width: 100%;
-    z-index: 1;
-    top: 100%; /* Ajuste a posição do menu em relação ao elemento */
-  }
-  
-  .menu-seletor li {
-    padding: 10px;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .menu-seletor li:hover {
-    background-color: #7450ac; /* Efeito de hover */
-  }
-  
-  /* Estilo para o menu seletor de categoria */
-  #menu-categoria {   
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #252529;
-    border-radius: 6px;
-    padding: 10px 0;
-    list-style: none;
-    width: 100%;
-  }
-  .menu-seletor--exibir {
-    display: block;  /* Menu exibido quando a classe é adicionada */
-  }
-  
-  
-  #menu-categoria li {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    color: white;
-    cursor: pointer;
-  }
-  
-  #menu-categoria li:hover {
-    background-color: #7450ac;
-  }
-  
-  /* Imagem da categoria */
-  .img-categoria {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-  }
-  /* Estilo para o texto e a seta de categoria */
-  .form__menu {
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-  
-  .form__menu__texto {
-    font-size: 18px;
-    font-weight: 700;
-    padding-right: 10px;
-  }
-  
-  .form__menu__tipo {
-    font-size: 16px;
-    font-weight: 400;
-    padding: 10px;
-    background-color: #252529;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  .seta2 {
-    cursor: pointer;
-    transition: transform 0.3s ease;  /* Efeito de rotação suave */
-    transform-origin: center;  /* Mantém a seta no centro ao girar */
-  }
- 
+
+.checkbox {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.salvar {
+  padding: 1em;
+  width: 35%;
+}
+.rodape {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.rodape__texto{
+  font-size: 12px;
+  text-align: center;
+  margin-right: 3em;
+  padding: 4px;
+}
